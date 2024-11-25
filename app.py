@@ -1,10 +1,15 @@
 from flask import Flask, render_template, request
 import requests
+import os
+
+
+
 
 app = Flask(__name__)
 
 # Replace with your OpenWeatherMap API key
-API_KEY = "d29249ec3cc746028b042715242708"
+API_KEY = os.getenv("WEATHER_API_KEY")
+
 
 @app.route("/")
 def home():
