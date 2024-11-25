@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #4682b4; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Weather App Container */
+.weather-app {
+    text-align: center;
+    color: #fff;
+}
+
+/* Title Styling */
+.weather-app h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Weather Card */
+.weather-card {
+    background: #fff;
+    color: #333;
+    width: 300px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+/* City Name */
+.weather-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Temperature */
+.weather-card h3 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+/* Description */
+.weather-card p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Weather Icon */
+.weather-card .weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Weather Details */
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.weather-details .detail {
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    color: #555;
+    width: 48%;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .weather-card {
+        width: 90%;
+    }
+    .weather-details .detail {
+        font-size: 0.8rem;
+    }
+}
+/* Search Again Link Styling */
+.search-again {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-again:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.search-again:active {
+    background-color: #003f8a;
+    transform: translateY(1px);
+}
+
+/* index.html */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #4682b4; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Form Container */
+.weather-form-container {
+    text-align: center;
+    background: #fff;
+    color: #333;
+    width: 350px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title Styling */
+.weather-form-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Form */
+.weather-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input Field */
+.weather-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.weather-form input[type="text"]:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+.weather-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.weather-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+

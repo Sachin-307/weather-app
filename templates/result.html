@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <h1>Weather in {{ weather.city }}, {{ weather.region }}, {{ weather.country }}</h1>
+    <p>Temperature: {{ weather.temperature }}°C</p>
+    <p>Feels Like: {{ weather.feels_like }}°C</p>
+    <p>Condition: {{ weather.description }}</p>
+    <img src="https:{{ weather.icon }}" alt="Weather Icon">
+    <p>Humidity: {{ weather.humidity }}%</p>
+    <p>Wind Speed: {{ weather.wind_speed }} kph</p>
+    <p>Pressure: {{ weather.pressure }} mb</p>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <h1>Weather App</h1>
+        <div class="weather-card">
+            
+            <h2>{{ weather.city }}, {{ weather.region }}</h2>
+            <h3>{{ weather.temperature }}°C</h3>
+            <p>{{ weather.description }}</p>
+            <img class="weather-icon" src="https:{{ weather.icon }}" alt="Weather Icon">
+            <div class="weather-details">
+                <div class="detail">Humidity: {{ weather.humidity }}%</div>
+                <div class="detail">Feels like: {{ weather.feels_like }}°C</div>
+            </div>
+            <a href="/" class="search-again">Search Again</a>
+
+        </div>
+        
+    </div>
+</body>
+</html>
+
